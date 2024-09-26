@@ -1,4 +1,4 @@
-@import '@nativescript/theme/scss/variables/blue';
+@import "@nativescript/theme/scss/variables/blue";
 
 // Custom styles
 .cars-list {
@@ -16,4 +16,23 @@
       @include colorize($contrasted-color: complementary background 30% 0%);
     }
   }
+}
+.fab-button {
+  height: 70;
+  width: 70;
+  margin: 15;
+  color: #ffffff;
+  background-color: #22247a;
+  horizontal-align: right;
+  vertical-align: bottom;
+}
+
+.fab-button-small {
+  height: 55;
+  width: 55;
+  margin: 15;
+  color: #ffffff;
+  background-color: #332d8a;
+  horizontal-align: right;
+  vertical-align: bottom;
 }

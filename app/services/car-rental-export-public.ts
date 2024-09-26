@@ -1,5 +1,5 @@
-{
-  "cars": {
+export var db = {
+  cars: {
     "car1": {
       "class": "Luxury",
       "doors": 2,

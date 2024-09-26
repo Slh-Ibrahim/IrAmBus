@@ -1,8 +1,7 @@
-<Page
-  navigatingTo="onNavigatingTo"
-  xmlns:lv="nativescript-ui-listview"
-  xmlns="http://schemas.nativescript.org/tns.xsd"
->
+<Page navigatingTo="onNavigatingTo"
+    xmlns:lv="nativescript-ui-listview"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:mdf="@nativescript-community/ui-material-floatingactionbutton">
 
     <ActionBar>
         <!-- Should remove the navigation button -->
@@ -31,13 +30,7 @@
 
                         <StackLayout row="1" class="hr m-y-5" colSpan="2" />
 
-                        <Image
-              row="2"
-              src="{{ imageUrl }}"
-              stretch="aspectFill"
-              height="120"
-              class="m-r-20"
-            />
+                        <Image row="2" src="{{ imageUrl }}" stretch="aspectFill" height="120" class="m-r-20" />
 
                         <StackLayout row="2" col="1" verticalAlignment="center">
                             <Label class="p-b-10">
@@ -67,5 +60,7 @@
         </lv:RadListView>
 
         <ActivityIndicator busy="{{ isLoading }}" />
+        <mdf:FloatingActionButton tap="{{ createLeaving }}" row="1" src="res://ic_add_white" rippleColor="#f1f1f1" class="fab-button" />
+
     </GridLayout>
 </Page>
